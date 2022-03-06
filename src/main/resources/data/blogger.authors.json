@@ -1,0 +1,2 @@
+{"_id":{"$oid":"6224d09d861e2337aa67f2f0"},"name":"hola2","email":"email@email.com","phone":"9764570452","birthDate":{"$date":{"$numberLong":"823132800000"}},"_class":"com.bootcamp.reto3.blog.entity.Author"}
+{"_id":{"$oid":"622529bd83e1c6457dbb5a1e"},"name":"hola2","email":"email@email.com","phone":"9764570452","birthDate":{"$date":{"$numberLong":"1580515200000"}},"_class":"com.bootcamp.reto3.blog.entity.Author"}

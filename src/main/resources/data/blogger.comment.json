@@ -1,0 +1,2 @@
+{"_id":{"$oid":"6224ec397cd6d23e3a772f80"},"date":{"$date":{"$numberLong":"1646524800000"}},"status":"ACTIVO","comment":"comentario 1","userId":"62215adf04126c7bcd90e10d","postId":"6224ec1f7cd6d23e3a772f7f","_class":"com.bootcamp.reto3.blog.entity.Comment"}
+{"_id":{"$oid":"6224f2d1cccb63674abd43d0"},"date":{"$date":{"$numberLong":"1646542800000"}},"userId":"62215adf04126c7bcd90e10d","postId":"6224ec1f7cd6d23e3a772f7f","_class":"com.bootcamp.reto3.blog.entity.Comment"}

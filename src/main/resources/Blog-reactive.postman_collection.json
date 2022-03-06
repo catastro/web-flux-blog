@@ -1,0 +1,433 @@
+{
+	"info": {
+		"_postman_id": "452164f4-3ccb-4c6f-a849-e5e782126872",
+		"name": "Blog-reactive",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1.1-Login Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\": \"user\",\r\n    \"password\": \"password\",\r\n    \"authorId\": \"62156acc93faf40491e1f7c6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/users/login?user=user&password=password",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"users",
+						"login"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "user"
+						},
+						{
+							"key": "password",
+							"value": "password"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1.2-Guardar Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\": \"user1\",\r\n    \"password\": \"password1\",\r\n    \"authorId\": \"62156acc93faf40491e1f7c6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1.3-Crear blog-max 3 blog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"hola3\",\r\n    \"authorId\":\"6224d09d861e2337aa67f2f0\",\r\n    \"url\":\"htt.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/blogs",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1.4-Crear blog-solo mayores de 18",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"hola3\",\r\n    \"authorId\":\"622529bd83e1c6457dbb5a1e\",\r\n    \"url\":\"htt.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/blogs",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1.5-Guardar post-solo post x dia(ejecutar 2 veces)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"blogId\": \"6224d3cf0fd5c32dc9863336\",\r\n    \"title\": \"LAS MUJERES EMPRENDEDORAS LIDERAN EL MUNDO DIGITAL EN EL PERÚ\",\r\n    \"content\": \"En el 2014, la Organización de las Naciones Unidas (ONU) declaró el 19 de noviembre...\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1.6-Guardar post-solo blogs activo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"blogId\": \"6224d40f0fd5c32dc9863337\",\r\n    \"title\": \"LAS MUJERES EMPRENDEDORAS LIDERAN EL MUNDO DIGITAL EN EL PERÚ\",\r\n    \"content\": \"En el 2014, la Organización de las Naciones Unidas (ONU) declaró el 19 de noviembre...\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1.7-Guardar comentario-solo post publicados/usuario comenta n veces",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"62215adf04126c7bcd90e10d\",\r\n    \"postId\": \"62252b7383e1c6457dbb5a1f\",\r\n    \"comment\": \"comentario 1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/comments",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1.8-Guardar Reaccion-una sola reaccion x usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"62215adf04126c7bcd90e10d\",\r\n    \"postId\": \"6224ec1f7cd6d23e3a772f7f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/reactions",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"reactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1.8-Eliminar Reaccion",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/reactions/62252c7c83e1c6457dbb5a20",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"reactions",
+						"62252c7c83e1c6457dbb5a20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1.9-Eliminar Author-en cascada blog, post, comentarios",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/authors/6224d09d861e2337aa67f2f0",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"authors",
+						"6224d09d861e2337aa67f2f0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener blog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/blogs",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener  Blog by Auhor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/blogs/author-id/62156acc93faf40491e1f7c6?status=VERIFICADO",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"blogs",
+						"author-id",
+						"62156acc93faf40491e1f7c6"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "VERIFICADO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Author por email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/authors?query=email@email.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"authors"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "email@email.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Author",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"hola2\",\r\n    \"email\":\"email@email.com\",\r\n    \"phone\":\"9764570452\",\r\n    \"birthDate\":\"2020-02-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/authors",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Author",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/authors",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actulizar Author",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"hola3\",\r\n    \"email\":\"email@email.com\",\r\n    \"phone\":\"9764570434\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/authors/62156acc93faf40491e1f7c6",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"authors",
+						"62156acc93faf40491e1f7c6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

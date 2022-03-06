@@ -1,0 +1,1 @@
+{"_id":{"$oid":"62215adf04126c7bcd90e10d"},"login":"user","password":"password","authorId":"62156acc93faf40491e1f7c6","_class":"com.bootcamp.reto3.blog.entity.User"}

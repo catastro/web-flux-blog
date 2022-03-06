@@ -1,0 +1,3 @@
+{"_id":{"$oid":"6224d3511fefe04b0a6ce661"},"name":"hola3","authorId":"6224d09d861e2337aa67f2f0","url":"htt.","status":"ACTIVO","_class":"com.bootcamp.reto3.blog.entity.Blog"}
+{"_id":{"$oid":"6224d3cf0fd5c32dc9863336"},"name":"hola3","authorId":"6224d09d861e2337aa67f2f0","url":"htt.","status":"ACTIVO","_class":"com.bootcamp.reto3.blog.entity.Blog"}
+{"_id":{"$oid":"6224d40f0fd5c32dc9863337"},"name":"hola3","authorId":"6224d09d861e2337aa67f2f0","url":"htt.","status":"INACTIVO","_class":"com.bootcamp.reto3.blog.entity.Blog"}

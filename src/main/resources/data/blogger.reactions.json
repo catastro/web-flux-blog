@@ -1,0 +1,1 @@
+{"_id":{"$oid":"62252c7c83e1c6457dbb5a20"},"type":"LIKE","date":{"$date":{"$numberLong":"1646542800000"}},"userId":"62215adf04126c7bcd90e10d","postId":"6224ec1f7cd6d23e3a772f7f","_class":"com.bootcamp.reto3.blog.entity.Reaction"}
